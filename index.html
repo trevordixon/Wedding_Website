@@ -1,0 +1,141 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!-- Consider adding a manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+
+  <!-- Use the .htaccess and remove these lines to avoid edge case issues.
+       More info: h5bp.com/i/378 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Christie &amp; Trevor | May 4, 2012</title>
+  <meta name="description" content="">
+
+  <!-- Mobile viewport optimized: h5bp.com/viewport -->
+  <meta name="viewport" content="width=device-width">
+
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Rouge+Script|Poiret+One|Quicksand|Lustria" type="text/css">
+
+
+  <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
+
+  <!-- All JavaScript at the bottom, except this Modernizr build.
+       Modernizr enables HTML5 elements & feature detects for optimal performance.
+       Create your own custom Modernizr build: www.modernizr.com/download/ -->
+  <script src="js/libs/modernizr-2.5.3.min.js"></script>
+</head>
+<body>
+  <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
+       chromium.org/developers/how-tos/chrome-frame-getting-started -->
+  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+  
+  <ul id="menu">
+    <li>
+      <a href="#home">Photos</a>
+    </li>
+    <li>
+      <a href="http://blog.christieandtrevor.com">Blog</a>
+    </li>
+    <li>
+      <a href="#venues">Venues</a>
+    </li>
+    <li>
+      <a href="#registry">Registry</a>
+    </li>
+    <li>
+      <a href="#rsvp">RSVP</a>
+    </li>
+  </ul>
+  
+  <header id="home">
+    <h1>Christie & Trevor</h1>
+    <h2>May 4, 2012<br><span title="04 May 2012 10:00:00 -0600" class="countdown"></span></h2>
+  </header>
+  
+  <div role="main">
+
+  <div id="pictures">
+    <div class="panel"></div>
+  </div>
+  
+  </div>
+
+  <div class="page" id="stories">
+    <h2></h2>
+  </div>
+  
+  <div id="venues"></div>
+  <div id="registry"></div>
+
+  <div class="page" id="rsvp">
+    <h2>Répondez, s'il vous plaît.</h2>
+    <label for="name" class="text_label">Name(s)</label><input type="text" id="name"><br>
+    <label for="email" class="text_label">Email</label><input type="text" id="email"><br>
+    <label for="attendees" class="text_label">Number of Attendees</label><input type="text" id="attendees"><br>
+    <fieldset>
+      <legend>Events you will attend</legend>
+      <ul>
+        <li>
+          <input type="checkbox" id="event_sealing"><label for="event_sealing">Sealing (May 4, 10:30am, Houston Temple)</label><br>
+        </li>
+        <li>
+          <input type="checkbox" id="event_reception_houston"><label for="event_reception_houston">Houston Reception (May 4, 6pm, Judy Salazar residence)</label><br>
+        </li>
+        <li>
+          <input type="checkbox" id="event_reception_utah"><label for="event_reception_utah">Utah Reception (May 18, 7pm, Dixon residence)</label>
+        </li>
+      <ul>
+    </fieldset>
+    <button>RSVP</button>
+  </div>
+  
+  <div id="request_invitation" class="page">
+    <button class="close">&#215;</button>
+    <h2>Request Invitation</h2>
+    <form method="post" action="/services/request_invitation.php" id="request_invitation_form">
+      <input type="hidden" name="rowid" value="">
+      <label for="invitation_name" class="text_label">Name(s)</label><input type="text" name="Name" id="invitation_name"><br>
+      <label for="invitation_address" class="text_label">Address</label><input type="text" name="Address" id="invitation_address"><br>
+      <label for="invitation_city" class="text_label">City</label><input type="text" name="City" id="invitation_city">
+      <label for="invitation_state" class="text_label inline">State</label><input type="text" name="State" id="invitation_state">
+      <label for="invitation_zip" class="text_label inline">Zip</label><input type="text" name="Zip" id="invitation_zip"><br>
+      <label for="invitation_phone" class="text_label">Phone</label><input type="text" name="Phone" id="invitation_phone"><br>
+      <label for="invitation_email" class="text_label">Email</label><input type="text" name="Email" id="invitation_email"><br>
+      <button type="submit">Submit</button>
+      <span class="success">&#10003;</span>
+    </form>
+  </div>
+
+  <footer style="height: 800px;">
+
+  </footer>
+
+
+  <!-- JavaScript at the bottom for fast page loading -->
+
+  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+
+  <!-- scripts concatenated and minified via build script -->
+  <script src="js/plugins.js"></script>
+  <script src="js/script.js"></script>
+  <!-- end scripts -->
+
+  <!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID.
+       mathiasbynens.be/notes/async-analytics-snippet -->
+  <script>
+    var _gaq=[['_setAccount','UA-559543-8'], ['_setDomainName', 'christieandtrevor.com'], ['_trackPageview']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));
+  </script>
+</body>
+</html>
